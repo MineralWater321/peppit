@@ -1,7 +1,7 @@
 export default function Navbar(){
     return(
-        <nav classNameName="bg-black shadow-lg">
-            <div classNameName="max-w-6xl mx-auto px-4">
+        <nav className="bg-white">
+            <div className="max-w-6xl mx-auto px-4">
                 <div className="flex justify-between">
                     <div className="flex space-x-7">                        
                         <div className="hidden md:flex items-center space-x-1">
