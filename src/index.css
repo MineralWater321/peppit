@@ -15,3 +15,7 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.error{
+  background-image: url(https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8NDA0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+}
