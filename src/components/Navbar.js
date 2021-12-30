@@ -15,7 +15,7 @@ export default function Navbar(){
                         peppit
                     </span>
             </div> 
-            <div className="flex-1 lg:flex-none">
+            <div className="flex-1 lg:flex-center">
                 <div className="form-control">
                 <input type="text" placeholder="Search" className="input input-ghost" />
                 </div>
