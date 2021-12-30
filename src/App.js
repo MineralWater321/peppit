@@ -1,12 +1,11 @@
 import './App.css';
 import Navbar from './components/Navbar'
-import Profile from './components/Profile';
-import {useState} from 'react'
+import Body from './components/Body';
 function App() {
-  const [authPerson, setauthPerson] = useState(false)
   return (
     <>
-    {authPerson ? <Navbar /> : <Profile />}
+      <Navbar /> 
+      <Body />
     </>
     
   );

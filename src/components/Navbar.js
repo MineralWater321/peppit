@@ -16,7 +16,7 @@ export default function Navbar(){
                                 to="/services"
                                 className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
                                 >Services
-                            </Link>
+                            </Link>                            
                             <Link
                                 to="/about"
                                 className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
