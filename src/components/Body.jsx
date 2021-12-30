@@ -1,7 +1,2 @@
-import React from 'react'
-
-function Body() {
-    return (    )
+export default function Body() {
 }
-
-export default Body

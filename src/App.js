@@ -5,9 +5,8 @@ function App() {
   return (
     <>
       <Navbar /> 
-      <Body />
+      {/* <Body /> */}
     </>
-    
   );
 }
 
