@@ -6,6 +6,7 @@ import About from '../page/About'
 import Home from '../page/Home'
 import Contact from "../page/Contact"
 import ERROR404 from '../page/ERROR404'
+import Auth from '../Auth'
 export default function Body() {
     return (
         <>
@@ -17,6 +18,7 @@ export default function Body() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="*" element={<ERROR404 />} />
                 <Route path="/login" element={<Login />} />
+
             </Routes>
         </>
     )

@@ -24,6 +24,9 @@ export default function RoutePick() {
                     <Link to="/contact" className='hover:bg-red-300' >📲 Contact</Link>
                 </li>
                 <li>
+                    <Link to="/login" className='hover:bg-red-300' >🏳️ Login</Link>
+                </li>
+                <li>
                     <Link to="404" className='hover:bg-red-300' >👋 Logout</Link>
                 </li>
             </ul>
