@@ -88,7 +88,7 @@ function HomePosts() {
           </span>
         </div>
         <div className=" font-bold text-md md:text-lg post-title">
-          <Link to="/r/AskReddit/comments/rue32w/without_naming_it_what_is_a_tv_show_that_is/">
+          <Link to="/r/AskReddit/without_naming_it_what_is_a_tv_show_that_is/">
             Without naming it, what is a TV show that is instantly recognizable
             based on one quote?
           </Link>

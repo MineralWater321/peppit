@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 function Subreddit() {
   const { id } = useParams();
-  console.log(id);
+  useEffect(() => {
+    document.title = id;
+  }, [id]);
   return <div>Subreddit</div>;
 }
 
