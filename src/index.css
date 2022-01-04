@@ -35,34 +35,6 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   @apply bg-neutral-focus rounded-md;
 }
-img {
-  @apply sm:max-w-sm w-auto;
-}
-.container ul {
-  list-style: initial;
-}
-
-.container h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: revert;
-  font-weight: revert;
-}
-.container a {
-  @apply link;
-}
-
-.textarea::-webkit-scrollbar {
-  width: 0.5rem;
-}
-
-.textarea::-webkit-scrollbar-track {
-  @apply bg-neutral;
-}
-
-.textarea::-webkit-scrollbar-thumb {
-  @apply bg-neutral-focus rounded-md;
+.post-image {
+  @apply w-6/12;
 }

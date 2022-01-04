@@ -1,15 +1,13 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
+import React from "react";
+import MobileNav from "../components/MobileNav";
+import Navbar from "../components/Navbar";
 
 function Services() {
-    return (
-        <>
-        
-        <div>
-            Services
-        </div>
-        </>
-    )
+  return (
+    <>
+      <MobileNav />
+    </>
+  );
 }
 
-export default Services
+export default Services;

@@ -18,7 +18,7 @@ function Home() {
   return (
     <>
       {/* Make Link card */}
-      <div className="  max-w-3xl mx-auto">
+      <div className=" max-w-sm  sm:max-w-3xl mx-auto ">
         <HomePosts />
         <HomePosts />
         <HomePosts />

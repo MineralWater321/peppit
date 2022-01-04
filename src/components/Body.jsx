@@ -14,12 +14,13 @@ export default function Body() {
     <>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/profile" element={<Profile />} />
+
         <Route path="/services" element={<Services />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/r/:id" element={<Subreddit />} />
         <Route path="/r/:id/:id" element={<Post />} />
+        <Route path="/u/:id" element={<Profile />} />
         <Route path="*" element={<ERROR404 />} />
         <Route path="/login" element={<Login />} />
       </Routes>

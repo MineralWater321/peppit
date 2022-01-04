@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import RoutePick from "./RoutePick";
 import logo from "../assets/NEW.png";
+
 export default function Navbar() {
   return (
-    <nav className="navbar mb-2 shadow-lg bg-neutral  text-neutral-content">
+    <nav className="navbar mb-2 shadow-lg bg-neutral justify-between text-neutral-content">
       <div className=" flex-1 px-2 mx-2 lg:flex">
         <Link to="/" className="flex items-center">
           <div class=" flex-none">
@@ -20,7 +21,7 @@ export default function Navbar() {
           <span className="text-3xl font-bold">peppit</span>
         </Link>
       </div>
-      <div className="flex-1  hidden md:flex lg:flex-center">
+      <div className="flex-1  hidden sm:flex lg:flex-center">
         <div className="form-control">
           <input
             type="text"

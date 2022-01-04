@@ -43,7 +43,7 @@ function HomePosts() {
   }
   return (
     <>
-      <div className="post bg-primary  my-3 rounded-lg p-10">
+      <div className="post bg-primary  my-3 rounded-lg p-2 md:p-5">
         <div className="post-header flex flex-wrap">
           <Link
             class="hover:text-neutral hover:underline post_subreddit"
@@ -59,31 +59,31 @@ function HomePosts() {
             u/blue_pookie
           </Link>
           <span class="mx-3 dot">•</span>
-          <span class="created" data-tip="Jan 02 2022, 17:10:21 UTC">
+          <span class="created" title="Jan 02 2022, 17:10:21 UTC">
             20h ago
           </span>
 
-          <span class="award tooltip" data-tip="Wholesome Seal of Approval">
+          <span class="award " title="Wholesome Seal of Approval">
             <RiContrast2Fill size="16" />
           </span>
 
-          <span class="award tooltip" data-tip="Silver">
+          <span class="award " title="Silver">
             <RiContrast2Fill size="16" />
           </span>
 
-          <span class="award tooltip" data-tip="Gold">
+          <span class="award " title="Gold">
             <RiContrast2Fill size="16" />
           </span>
 
-          <span class="award tooltip" data-tip="Helpful">
+          <span class="award " title="Helpful">
             <RiContrast2Fill size="16" />
           </span>
 
-          <span class="award tooltip" data-tip="Wholesome">
+          <span class="award " title="Wholesome">
             <RiContrast2Fill size="16" />
           </span>
 
-          <span data-tip="Take My Energy" className="award tooltip">
+          <span title="Take My Energy" className="award ">
             <RiContrast2Fill size="16" />
           </span>
         </div>
@@ -95,6 +95,7 @@ function HomePosts() {
         </div>
         <div className="flex justify-center  my-3">
           <img
+            className="post-image"
             alt="Post"
             src="https://libredd.it/preview/external-pre/UQxlAGYbxFWQA1r1-JUp-XQs4VWlzyBPn-g81HaX2OI.jpg?auto=webp&s=ca0bca9142e93715ea6777294eb36fa62bc9c579"
           />
@@ -112,7 +113,7 @@ function HomePosts() {
         </a> */}
         <div className="divider"></div>
 
-        <div className=" flex post-votes mb-0 pb-0 post-footer">
+        <div className=" flex post-votes mb-0 pb-0 justify-between md:justify-start post-footer">
           <div className="flex  items-center">
             <button
               onClick={ClickUp}
@@ -132,13 +133,13 @@ function HomePosts() {
               <ArrowDown size="32" />
             </button>
           </div>
-          <a
+          <Link
             className="mx-3 hidden  md:flex  ease-in-out duration-300  rounded-md cursor-pointer btn btn-secondary  my-auto"
-            href="/r/Philippines/daily_random_discussion_jan_03_2022/"
+            to="/r/Philippines/daily_random_discussion_jan_03_2022/"
           >
             <FaComments className="my-auto mx-2" />
             <span>535 comments</span>
-          </a>
+          </Link>
           <div className="   hidden  md:flex ease-in-out duration-300  rounded-md cursor-pointer btn btn-secondary">
             <FaShare className="my-auto mx-2" />
             <span>share</span>
@@ -147,7 +148,7 @@ function HomePosts() {
             <FaSave className="my-auto mx-2" />
             <span>save</span>
           </div>
-          <div className="mx-3 fllex  md:hidden  ease-in-out duration-300  rounded-md cursor-pointer btn btn-secondary ">
+          <div className="mx-3 flex  md:hidden  ease-in-out duration-300  rounded-md cursor-pointer btn btn-secondary ">
             <FiMoreHorizontal className="my-auto mx-2" />
             <span>More</span>
           </div>

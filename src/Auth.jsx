@@ -1,5 +1,3 @@
-
-
 // import Gun from 'gun'
 // import { useContext, createContext } from 'react';
 // import 'gun/sea'
@@ -10,28 +8,21 @@
 // //  printUser(user)})
 // export const db =  Gun({peers:['http://localhost:3070/gun']});
 
-
 // export const user = db.user().recall({ sessionStorage: true })
-
 
 // db.on("create", async () => {await console.log("user made")})
 
 // //user.create('second', 'securesomewhatez')
-//  //user.auth('second', 'securesomewhatez', Check) 
-//  user.auth('hinz10', 'securesomewhatez', Check) 
+//  //user.auth('second', 'securesomewhatez', Check)
+//  user.auth('hinz10', 'securesomewhatez', Check)
 //  //user.leave()
- 
+
 // export const yoink = "hi"
 //  export async function Check(){
-    
+
 //     const alias = await user.get('alias')
 //    yoink = alias
 //     return alias
 //  }
 
-
-
-
-
- 
- 
+export const user = "hinzwifi";

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { user } from "../Auth";
 export default function RoutePick() {
   const auth = "Peppit";
   return (
@@ -21,7 +22,7 @@ export default function RoutePick() {
           </Link>
         </li>
         <li>
-          <Link to="/profile" className="hover:bg-red-300  ">
+          <Link to={`/u/${user}`} className="hover:bg-red-300  ">
             💆 Profile
           </Link>
         </li>
