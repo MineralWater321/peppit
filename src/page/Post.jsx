@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 function Post() {
@@ -8,7 +8,11 @@ function Post() {
       id.charAt(0).toUpperCase() +
       id.slice(1).replaceAll("_", " ").toLowerCase();
   }, [id]);
-  return <div>Post</div>;
+  return (
+    <>
+      <div>Post</div>
+    </>
+  );
 }
 
 export default Post;

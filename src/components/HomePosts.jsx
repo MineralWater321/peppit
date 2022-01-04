@@ -8,7 +8,7 @@ import {
   RiArrowDownCircleFill,
 } from "react-icons/ri";
 import { Link } from "react-router-dom";
-import { BiUpvote, BiDownvote } from "react-icons/bi";
+import { FiMoreHorizontal } from "react-icons/fi";
 import { FaShare, FaComments, FaSave } from "react-icons/fa";
 function HomePosts() {
   const [upvotes, setupvotes] = useState(69);
@@ -59,35 +59,35 @@ function HomePosts() {
             u/blue_pookie
           </Link>
           <span class="mx-3 dot">•</span>
-          <span class="created" title="Jan 02 2022, 17:10:21 UTC">
+          <span class="created" data-tip="Jan 02 2022, 17:10:21 UTC">
             20h ago
           </span>
 
-          <span class="award" title="Wholesome Seal of Approval">
+          <span class="award tooltip" data-tip="Wholesome Seal of Approval">
             <RiContrast2Fill size="16" />
           </span>
 
-          <span class="award" title="Silver">
+          <span class="award tooltip" data-tip="Silver">
             <RiContrast2Fill size="16" />
           </span>
 
-          <span class="award" title="Gold">
+          <span class="award tooltip" data-tip="Gold">
             <RiContrast2Fill size="16" />
           </span>
 
-          <span class="award" title="Helpful">
+          <span class="award tooltip" data-tip="Helpful">
             <RiContrast2Fill size="16" />
           </span>
 
-          <span class="award" title="Wholesome">
+          <span class="award tooltip" data-tip="Wholesome">
             <RiContrast2Fill size="16" />
           </span>
 
-          <span class="award" title="Take My Energy">
+          <span data-tip="Take My Energy" className="award tooltip">
             <RiContrast2Fill size="16" />
           </span>
         </div>
-        <div className=" font-bold text-md md:text-lg post-title">
+        <div className=" font-bold text-md md:text-lg post-data-tip">
           <Link to="/r/AskReddit/without_naming_it_what_is_a_tv_show_that_is/">
             Without naming it, what is a TV show that is instantly recognizable
             based on one quote?
@@ -134,7 +134,7 @@ function HomePosts() {
           </div>
           <a
             className="mx-3 hidden  md:flex  ease-in-out duration-300  rounded-md cursor-pointer btn btn-secondary  my-auto"
-            href="/r/Philippines/comments/rukhy3/daily_random_discussion_jan_03_2022/"
+            href="/r/Philippines/daily_random_discussion_jan_03_2022/"
           >
             <FaComments className="my-auto mx-2" />
             <span>535 comments</span>
@@ -146,6 +146,10 @@ function HomePosts() {
           <div className="mx-3 hidden  md:flex  ease-in-out duration-300  rounded-md cursor-pointer btn btn-secondary ">
             <FaSave className="my-auto mx-2" />
             <span>save</span>
+          </div>
+          <div className="mx-3 fllex  md:hidden  ease-in-out duration-300  rounded-md cursor-pointer btn btn-secondary ">
+            <FiMoreHorizontal className="my-auto mx-2" />
+            <span>More</span>
           </div>
         </div>
       </div>

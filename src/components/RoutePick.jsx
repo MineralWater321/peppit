@@ -42,14 +42,10 @@ export default function RoutePick() {
         </li>
         <li className="flex md:hidden">
           <Link to="/login" className="hover:bg-red-300 ">
-            🏳️ Login
+            🏳️ Login/Register
           </Link>
         </li>
-        <li className="flex md:hidden">
-          <Link to="/register" className="hover:bg-red-300 ">
-            🖊️ Register
-          </Link>
-        </li>
+
         <li>
           <Link to="404" className="hover:bg-red-300">
             👋 Logout
