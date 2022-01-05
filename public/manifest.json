@@ -1,21 +1,31 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Peppit",
+  "description": "It is a project I want to do to learn more about React and doing full stack",
+  "name": "Peppit: The place where you can share stuff",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "images/manifest-icon-192.maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
     },
     {
-      "src": "logo192.png",
+      "src": "images/manifest-icon-192.maskable.png",
+      "sizes": "192x192",
       "type": "image/png",
-      "sizes": "192x192"
+      "purpose": "maskable"
     },
     {
-      "src": "logo512.png",
+      "src": "images/manifest-icon-512.maskable.png",
+      "sizes": "512x512",
       "type": "image/png",
-      "sizes": "512x512"
+      "purpose": "any"
+    },
+    {
+      "src": "images/manifest-icon-512.maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "start_url": ".",

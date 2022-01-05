@@ -36,18 +36,32 @@ body::-webkit-scrollbar-thumb {
   @apply bg-neutral-focus rounded-md;
 }
 .post-image {
-  @apply w-6/12;
+  @apply w-11/12 md:w-6/12;
 }
 
 .login-page {
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: top;
-  background-image: url(http://bit.ly/2gPLxZ4);
-
-  font-family: Arial, Helvetica;
-  letter-spacing: 0.02em;
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
+  background-image: url(http://bit.ly/2gPLxZ4); */
+  background-image: url(/src/assets/bg_bggenerator_com.png);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
 }
+/* .skeleton {
+  @apply animate-pulse opacity-70;
+} */
+
+/* .skeleton {
+  animation: skeleton-loading 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsla(200, 20%, 70%);
+  }
+  100% {
+    background-color: hsla(200, 20%, 95%);
+  }
+} */
