@@ -7,6 +7,7 @@ function Profile() {
   console.log(id);
   return (
     <>
+      <Navbar />
       <div>Profile</div>
     </>
   );

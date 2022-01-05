@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import HomePosts from "../components/HomePosts";
+import Navbar from "../components/Navbar";
 // import { Check } from '../Auth'
 // import { yoink } from '../Auth'
 
 function Home() {
+  useEffect(() => {
+    document.title = "Peppit";
+  }, []);
   //     console.log(yoink)
   //     const [userName, setuserName] = useState("")
   //    useEffect(() => {
@@ -17,6 +21,7 @@ function Home() {
 
   return (
     <>
+      <Navbar />
       {/* Make Link card */}
       <div className=" max-w-sm  sm:max-w-3xl mx-auto ">
         <HomePosts />

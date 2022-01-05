@@ -14,57 +14,59 @@ export default function Login() {
 
   return (
     <>
-      <form onSubmit={submitForm} className="max-w-md mx-auto">
-        <div className="form-control ">
-          <label className="label">
-            <span className="label-text">Username</span>
-          </label>
-          <input
-            autoComplete="yes"
-            type="text"
-            placeholder="USERNAME"
-            className="input input-bordered "
-            value={username}
-            required
-            onChange={(e) => setUsername(e.target.value)}
-          />
-        </div>
-        <div className="form-control  ">
-          <label className="label ">
-            <span className="label-text">Password</span>
-          </label>
-          <AiFillEye />
-          <input
-            type="password"
-            title="Enter an ID consisting of 4-8 hexadecimal digits"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            aria-autocomplete="list"
-            autoComplete="current-password"
-            placeholder="PASSWORD"
-            className="input input-bordered  "
-            minLength="8"
-            required
-          />
-        </div>
-        <div class="divider"></div>
-        <div class="form-control ">
-          <button
-            class="btn btn-primary btn-active my-3"
-            aria-pressed="true"
-            type="submit"
-          >
-            Submit
-          </button>
-          <Link
-            class="btn btn-error btn-active  my-3"
-            aria-pressed="true"
-            to="/"
-          >
-            Cancel
-          </Link>
-        </div>
-      </form>
+      <div className="flex justify-center items-center h-screen login-page ">
+        <form onSubmit={submitForm} className=" w-8/12 lg:w-6/12  ">
+          <div className="form-control ">
+            <label className="label">
+              <span className="label-text text-3xl">Username</span>
+            </label>
+            <input
+              autoComplete="yes"
+              type="text"
+              placeholder="USERNAME"
+              className="input input-bordered "
+              value={username}
+              required
+              onChange={(e) => setUsername(e.target.value)}
+            />
+          </div>
+          <div className="form-control  ">
+            <label className="label ">
+              <span className="label-text text-3xl">Password</span>
+            </label>
+
+            <input
+              type="password"
+              title="Enter an ID consisting of 4-8 hexadecimal digits"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              aria-autocomplete="list"
+              autoComplete="current-password"
+              placeholder="PASSWORD"
+              className="input input-bordered  "
+              minLength="8"
+              required
+            />
+          </div>
+          <div class="divider"></div>
+          <div class="form-control ">
+            <button
+              class="btn btn-primary btn-active my-3"
+              aria-pressed="true"
+              type="submit"
+            >
+              Submit
+            </button>
+            <Link
+              class="btn btn-error btn-active  my-3"
+              aria-pressed="true"
+              to="/"
+            >
+              Cancel
+            </Link>
+          </div>
+        </form>
+      </div>
     </>
   );
 }

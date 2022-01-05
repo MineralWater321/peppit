@@ -38,3 +38,16 @@ body::-webkit-scrollbar-thumb {
 .post-image {
   @apply w-6/12;
 }
+
+.login-page {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  background-image: url(http://bit.ly/2gPLxZ4);
+
+  font-family: Arial, Helvetica;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}

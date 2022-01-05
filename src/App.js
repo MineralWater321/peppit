@@ -1,12 +1,10 @@
-import './App.css';
-import Navbar from './components/Navbar'
-import Body from './components/Body';
+import "./App.css";
 
+import Body from "./components/Body";
 
 function App() {
   return (
     <>
-      <Navbar />
       <Body />
     </>
   );
