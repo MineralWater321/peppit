@@ -49,6 +49,7 @@ body::-webkit-scrollbar-thumb {
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
+  height: calc(100vh - 66px);
 }
 /* .skeleton {
   @apply animate-pulse opacity-70;

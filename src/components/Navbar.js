@@ -4,7 +4,7 @@ import logo from "../assets/NEW.png";
 
 export default function Navbar() {
   return (
-    <nav className="navbar mb-2 shadow-lg bg-neutral justify-between text-neutral-content">
+    <nav className="navbar shadow-lg bg-neutral justify-between text-neutral-content">
       <div className=" flex-1 px-2 mx-2 lg:flex">
         <Link to="/" className="flex items-center">
           <div class=" flex-none">

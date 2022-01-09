@@ -21,7 +21,6 @@ function Home() {
 
   return (
     <>
-      <Navbar />
       {/* Make Link card */}
       <div className=" max-w-sm  sm:max-w-3xl mx-auto ">
         <HomePosts />

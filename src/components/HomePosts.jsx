@@ -111,9 +111,8 @@ function HomePosts() {
             <span className="text-3xl my-auto">Loading...</span>
           </div> */}
           <div
-            className={` ${
-              loading ? "" : "hidden"
-            } flex items-center justify-center   `}
+            className={` ${loading ? "" : "hidden"
+              } flex items-center justify-center   `}
           >
             <div class="animate-spin ">
               <AiOutlineLoading3Quarters />
@@ -143,18 +142,16 @@ function HomePosts() {
           <div className="flex  items-center">
             <button
               onClick={ClickUp}
-              className={`${
-                voted ? "	   " : " btn-disabled "
-              }m-auto mx-2 btn btn-accent`}
+              className={`${voted ? "	   " : " btn-disabled "
+                }m-auto mx-2 btn btn-accent`}
             >
               <ArrowUp size="16" />
             </button>
             <div>{upvotes}</div>
             <button
               onClick={ClickDown}
-              className={`${
-                voted ? "	   " : " btn-disabled "
-              } m-auto mx-2 btn btn-accent`}
+              className={`${voted ? "	   " : " btn-disabled "
+                } m-auto mx-2 btn btn-accent`}
             >
               <ArrowDown size="32" />
             </button>
