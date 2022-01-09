@@ -5,15 +5,15 @@ export default function RoutePick() {
   const auth = "Peppit";
   return (
     <div className=" dropdown md:dropdown-start dropdown-hover dropdown-end lg:block ">
-      <div class="avatar placeholder px-4 h-6 ">
-        <div class="bg-neutral-focus hover:bg-red-300 hover:cursor-pointer  text-neutral-content rounded-full w-10 h-10">
+      <div className="avatar placeholder px-4 h-6 ">
+        <div className="bg-neutral-focus hover:bg-red-300 hover:cursor-pointer  text-neutral-content rounded-full w-10 h-10">
           <img src={`https://avatars.dicebear.com/api/avataaars/${auth}.svg`} />
         </div>
       </div>
       {/* <div tabindex="0" class="m-1 btn">This</div>  */}
       <ul
         tabIndex="0"
-        class="p-2 shadow menu dropdown-content bg-base-200  rounded-box w-52 text-base-content"
+        className="p-2 shadow menu dropdown-content bg-base-200  rounded-box w-52 text-base-content"
         data-choose-theme
       >
         <li>

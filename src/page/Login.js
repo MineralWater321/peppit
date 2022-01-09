@@ -15,14 +15,14 @@ export default function Login() {
 
   return (
     <div className="login-page">
-      <div className="flex justify-center items-center form-frosty">
-        <form onSubmit={() => submitForm} className=" w-8/12 lg:w-4/12  ">
-          <div className="text-center text-6xl md:text-9xl">
+      <div className="flex justify-center items-center">
+        <form onSubmit={() => submitForm()} className="md:w-128 w-96 mx-3 my-4 md:my-12">
+          {/* <div className="text-center text-4xl md:text-6xl">
             P
             <span className="text-red-400">
               eppit
             </span>
-          </div>
+          </div> */}
           <div className="form-control ">
             <label className="label">
               <span className="label-text text-3xl">Username</span>
@@ -55,21 +55,21 @@ export default function Login() {
               required
             />
           </div>
-          <div class="divider"></div>
-          <div class="form-control ">
+          <div className="divider"></div>
+          <div className="form-control ">
             <button
-              class="btn btn-primary btn-active my-3"
+              className="btn btn-primary btn-active my-3"
               aria-pressed="true"
               type="submit"
             >
               Login
             </button>
             <Link
-              class="btn btn-error btn-active  my-3"
+              className="btn btn-accent btn-active  my-3"
               aria-pressed="true"
               to="/"
             >
-              Cancel
+              New User? Sign Up Here
             </Link>
           </div>
         </form>
